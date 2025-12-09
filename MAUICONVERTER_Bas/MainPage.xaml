@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MAUICONVERTER_Bas.MainPage">
+             x:Class="MAUICONVERTER_Bas.MainPage"
+             Shell.NavBarIsVisible="False">
 
     <ScrollView>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+          
 
-            <Image Source="background.png"
-               VerticalOptions="Start"/>
+            <Image Source="bgmain.png"
+                   Aspect="Fill"   
+               />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -23,10 +23,11 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <VerticalStackLayout Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center">
-                    <Label Text="Designed by NAVASCA"
+                    <Label Text="Designed by BAS"
                        FontSize="11"
                        FontFamily="lexend"
                        TextColor="White"
@@ -46,59 +47,61 @@
                 <ImageButton Grid.Row="1"
                          x:Name="information"
                          Clicked="information_Clicked"
-                         Source="information.png"
+                         Source="bg10.png"
                          Margin="0,100,0,0"/>
 
                 <ImageButton Grid.Row="1"
                          Grid.Column="1"
                          x:Name="volume"
                          Clicked="volume_Clicked"
-                         Source="volume.png"
+                         Source="bg8.png"
                          Margin="0,100,0,0"/>
 
-                <ImageButton Grid.Row="2"
+                <ImageButton Grid.Row="1"
+                         Grid.Column="2"
                          x:Name="length"
                          Clicked="length_Clicked"
-                         Source="length.png"
+                         Source="bg1.png"
+                         Margin="0,100,0,0"/>
+
+                <ImageButton Grid.Row="2"                    
+                         x:Name="mass"
+                         Clicked="mass_Clicked"
+                         Source="bg11.png"
                          Margin="0,20,0,0"/>
 
                 <ImageButton Grid.Row="2"
-                         Grid.Column="1"
-                         x:Name="mass"
-                         Clicked="mass_Clicked"
-                         Source="mass.png"
-                         Margin="0,20,0,0"/>
-
-                <ImageButton Grid.Row="3"
+                             Grid.Column="1"
                          x:Name="temperature"
                          Clicked="temperature_Clicked"
-                         Source="temperature.png"
+                         Source="bg7.png"
+                         Margin="0,20,0,0"/>
+
+                <ImageButton Grid.Row="2"
+                         Grid.Column="2"
+                         x:Name="energy"
+                         Clicked="energy_Clicked"
+                         Source="bg2.png"
                          Margin="0,20,0,0"/>
 
                 <ImageButton Grid.Row="3"
-                         Grid.Column="1"
-                         x:Name="energy"
-                         Clicked="energy_Clicked"
-                         Source="energy.png"
-                         Margin="0,20,0,0"/>
-
-                <ImageButton Grid.Row="4"
                          x:Name="area"
                          Clicked="area_Clicked"
-                         Source="area.png"
+                         Source="bg3.png"
                          Margin="0,20,0,0"/>
 
-                <ImageButton Grid.Row="4"
+                <ImageButton Grid.Row="3"
                          Grid.Column="1"
                          x:Name="speed"
                          Clicked="speed_Clicked"
-                         Source="speed.png"
+                         Source="bg6.png"
                          Margin="0,20,0,0"/>
 
-                <ImageButton Grid.Row="5"
+                <ImageButton Grid.Row="3"
+                              Grid.Column="2"
                          x:Name="duration"
                          Clicked="duration_Clicked"
-                         Source="duration.png"
+                         Source="bg5.png"
                          Margin="0,20,0,50"/>
 
 
